@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  /* background-color: gray; */
+  background-image: url('https://www.worklifepsych.com/wp-content/uploads/2023/01/kelly-sikkema-6aY-6B3MiZ4-unsplash-1000x563.jpg');
+  background-size: cover;
+  background-color:darkgray;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 20px; */
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  /* text-align: center; */
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login{
   display: flex;
-  flex-direction: column;
+  height: 100%;
+}
+.img{
+  width: 50%;
+  height: 100vh;
+}
+.card{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin-top: 10px; */
+  /* background-color: cornflowerblue; */
   color: white;
+  width: 100%;
+  border-radius: 20px;
+  
+}
+.signup{
+  display: flex;
+  height: 500%;
+}
+.img{
+  width: 50%;
+  height: 500%;
+}
+/* .signupcard{
+  background-color: white;
+  width: 50%;
+  text-align: left;
+  align-items: center;
+} */
+.cardtodo{
+  width: 600px;
+  height: 450px;
+  /* background-color: black; */
+  
+}
+/* .center{
+  background-color: orange;
+} */
+/* .cardbody{
+  background-color: gray;
+  background-image: url('https://img.freepik.com/free-vector/gradient-wavy-grey-background_23-2149121735.jpg');
+} */
+.cardtitle{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 27px;
+  color:white;
+}
+.order{
+  display: block;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.order div{
+  margin-bottom: 10px;
+}
+.order button{
+  justify-content: space-between;
+}
+table{
+  justify-content: space-between;
+}
+.cards{
+  background-color:rgba(161, 85, 22, 0.856);
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  border-color: black;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  
+  
+  /* justify-content: space-between; */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* width: 50%; */
+  top: 0px;
+  /* position: fixed; */
+}
+.center1{
+align-items: center;
+text-align: center;
+display: flex;
+/* top: 0; */
+/* position: fixed; */
+}
+.map{
+  /* display: inline-block; */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: scroll;
+  max-height: 700px;
+  /* white-space: nowrap; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:768px) {
+  .center1{
+    /* display: flex; */
+    flex-direction: column;
+    width: 75%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .map{
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
   }
+}
+
+@media (max-width:360px) {
+  .center1{
+    /* display: flex; */
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .map{
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
+  }
+}
+
+ @media (max-width:768px) {
+  .login{
+    /* display: flex; */
+    flex-direction: column;
+    width: 75%;
+    /* text-align: left; */
+  }
+  .form{
+    text-align: left;
+  }
+
+}
+
+@media (max-width:768px) {
+  .signup{
+    /* display: flex; */
+    flex-direction: column;
+    width: 75%;
+    max-height: 700px;
+    text-align: left;
+  }
+
 }
