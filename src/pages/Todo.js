@@ -42,7 +42,7 @@ const Todo = () => {
         getdetails();
     }, [])
     const getdetails = () => {
-        axios.get("https://frantic-foal-uniform.cyclic.app/todos/gettodos").then(
+        axios.get("https://sore-erin-gorilla-toga.cyclic.app/todos/gettodos").then(
             responce => {
                 var filterdata = responce.data.todos.filter(data => {  //filterdata is used to filter the todos from data
                     return data.useremail == useremail  //data.useremail is used to return the data
@@ -62,7 +62,7 @@ const Todo = () => {
             Startdate: Startdate,
             Enddate: Enddate
         }
-        axios.post('https://frantic-foal-uniform.cyclic.app/todos/todos', body)
+        axios.post('https://sore-erin-gorilla-toga.cyclic.app/todos/todos', body)
             .then((responce) => {
                 console.log("list has been posted")
                 getdetails()
@@ -76,7 +76,7 @@ const Todo = () => {
     };
     const deletehandler = (id) => {
         alert("you want to delete")
-        axios.delete('https://frantic-foal-uniform.cyclic.app/todos/deletetodos/' + id)
+        axios.delete('https://sore-erin-gorilla-toga.cyclic.app/todos/deletetodos/' + id)
             .then((response) => {
                 const newtodos = todos.filter((list) => list.id !== id);
                 setTodoList(newtodos);
@@ -96,7 +96,7 @@ const Todo = () => {
 
     const updatehandler = (id) => {
 
-        axios.put('https://frantic-foal-uniform.cyclic.app/todos/updatetodos/' + id, { name: newValue, Duration: newduration, Startdate: newstartdate, Enddate: newenddate })
+        axios.put('https://sore-erin-gorilla-toga.cyclic.app/todos/updatetodos/' + id, { name: newValue, Duration: newduration, Startdate: newstartdate, Enddate: newenddate })
             .then(response => {
                 const newtodos = todoList.map(list => {
                     if (list._id === id) {

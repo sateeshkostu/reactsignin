@@ -20,7 +20,7 @@ const Signinform = () => {
       Password: password,
       Confirmpassword: confirmPassword
     }
-    await axios.post('https://frantic-foal-uniform.cyclic.app/signup/signup/', body)
+    await axios.post('https://sore-erin-gorilla-toga.cyclic.app/signup/signup/', body)
       .then((response) => {
         console.log(response.data);
         alert('signup succesfull')

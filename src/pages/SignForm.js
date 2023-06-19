@@ -16,7 +16,7 @@ const SignForm = () => {
       Email: email,
       typedPassword: password
     }
-    await axios.post("https://frantic-foal-uniform.cyclic.app/signup/logindetails/", body)
+    await axios.post("https://sore-erin-gorilla-toga.cyclic.app/signup/logindetails/", body)
       .then((response) => {
         console.log(response.data.message);
         alert('login succesfull')
